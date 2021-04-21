@@ -31,15 +31,8 @@
   padding: 10px 20px;
   background-color: #333;
   color: #f1f1f1;
-  border-radius: 0;
+  border-radius: 2;
   transition: 0.2s;
-  /* On hover, the color of .btn will transition to white with black text */
-  :hover,
-  :focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-  }
 }
 
 /* Add a dark background color to the footer */
@@ -77,12 +70,14 @@ footer {
   color: white;
 }
 .projects-bg {
-  @extend %background;
+  background-image: url("../image/blueprint.jpg");
+  background-size: cover;
+  height: 100vh;
   color: black;
   h2 {
     color: white;
   }
-  button {
+  a {
     border-radius: 20px;
   }
   .img-thumbnail {
@@ -97,7 +92,7 @@ footer {
 }
 
 /*mobile version*/
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px), (max-height: 992px) {
   .skills-bg,
   .projects-bg {
     background: linear-gradient(#0f2027, #203a43, #292e49);
