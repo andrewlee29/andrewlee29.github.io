@@ -5,13 +5,17 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--js-->
-    <script src="js/custom.js"></script>
     <!-- bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-</head>
+    <!--font styles-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Patua+One&family=Press+Start+2P&family=Zen+Dots&display=swap" rel="stylesheet">
+    <!--js-->
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
 <body>
     <!-- nav bar-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -56,30 +60,34 @@
       </nav>
 
     <!-- carousel with Captions -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner ">
+
         <div class="carousel-item active">
           <img src="image/bg1.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
+            <h1 >Welcome to my site!!</h1>
             <h5>A broken bike</h5>
-            <p>Photo that I took in photography classes</p>
+            <p>Photo that I took in boston downtown</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="image/bg2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
+            <h1>Welcome to my site!!</h1>
             <h5>The city</h5>
-            <p>Photo that I took in photography classes</p>
+            <p>Photo that I took in boston downtown</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="image/bg3.JPG" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
+            <h1>Welcome to my site!!</h1>
             <h5>Hong Kong</h5>
             <p>My home town</p>
           </div>
@@ -99,7 +107,7 @@
       <div id = "about" class="container text-center ">
         <h3>Who am I?</h3>
         <p>I am Andrew Lee</p>
-        <p>Creating, Designing, Solving.......</p>
+        <br><br><br><br><br>
         <div class="row row-cols-auto">
           <div class="col-md-6">
             <img src="image/mine.jpg" class="rounded-circle person" alt="mypic" width="255" height="255" max-width ="100%">
@@ -109,6 +117,7 @@
               of Technology. I love thinking and solving problems beyond the existing rules. </p>
           </div>
         </div>
+        <div id="typewriter"></div>
       </div>
     </div>
     
@@ -247,16 +256,20 @@
     <div class="Contact-bg"> 
       <div id="contact" class="container text-center">
           <h3>Contact</h3>
-          <p>Drop a note!</p>
+          <br><br>
           <p>Send me a email:</p>
           <p>andrewlee_29@hotmail.com</p>
-          <a href="mailto:andrewlee_29@hotmail.com" class="btn btn-primary">send</a>
+          <a href="mailto:andrewlee_29@hotmail.com" class="btn btn-primary">Drop a note!</a>
         </div>
     </div>
 
 <!--footer-->
 <footer class="text-center">
   <p>Thank You</p>
+  <a href="#carouselExampleCaptions"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+    <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+  </svg></a>
   <br><br><br><br><br>
 </footer>
 
