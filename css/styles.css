@@ -1,7 +1,7 @@
 .skills-bg, .about-bg,
 .contact-bg {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0f2027), color-stop(#203a43), to(#292e49));
-  background: linear-gradient(#0f2027, #203a43, #292e49);
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f2027), color-stop(#203a43), color-stop(#292e49), to(#0f2027));
+  background: linear-gradient(#0f2027, #203a43, #292e49, #0f2027);
   height: 100vh;
 }
 
@@ -153,8 +153,8 @@ footer a :hover {
   .skills-bg,
   .about-bg,
   .projects-bg {
-    background: -webkit-gradient(linear, left top, left bottom, from(#0f2027), color-stop(#203a43), to(#292e49));
-    background: linear-gradient(#0f2027, #203a43, #292e49);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0f2027), color-stop(#203a43), color-stop(#292e49), to(#0f2027));
+    background: linear-gradient(#0f2027, #203a43, #292e49, #0f2027);
     height: auto;
   }
 }

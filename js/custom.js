@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    //typewriter effect
   var typewriter = document.getElementById('typewriter');
   
   var typewriter = new Typewriter(typewriter, {
@@ -14,4 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
       .typeString('<strong>I can do this All day</strong>')
       .pauseFor(2500)
       .start();
+
+
   });
