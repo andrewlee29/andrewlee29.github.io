@@ -129,6 +129,26 @@ footer {
   font-size: 20px;
   font-family: "Press Start 2P", cursive;
 }
+
+// intro
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: rgb(71, 255, 169);
+    font-size: 3rem;
+    font-family: "Press Start 2P", cursive;
+  }
+}
 /*mobile version*/
 @media only screen and (max-width: 992px), (max-height: 992px) {
   .skills-bg,

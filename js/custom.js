@@ -18,8 +18,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //text animation
     gsap.registerPlugin(ScrollTrigger);
+
+    const tl =gsap.timeline({defaults:{ease:'power1.out'}})
+        //intro
+       tl.fromTo('.hide-icon',{opacity:0},{opacity:1,duration:2})
+       tl.fromTo('.hide-text',{opacity:0},{opacity:1,duration:1})
+       tl.fromTo('.hide',{scale:1,opacity:1}, {scale:4,opacity:0, duration: 2, ease: "none"})
+
+       tl.to ('.intro',{y:"-100%",ease:"bounce.out",duration:1},"-=0.5")
+            //navbar
+        tl.fromTo('.navbar',{opacity:0},{opacity:1,duration:1})
+            //carousel-caption
+        tl.fromTo('.carousel-caption',{opacity:0},{opacity:1,duration:0.5})
+
     if(window.innerWidth >800)
     {
+ 
         //about
         gsap.from('.person', {
             scrollTrigger: {
